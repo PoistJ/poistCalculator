@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     width: 340px;
     height: 400px;
-    margin: 30px auto 10px auto;
+    margin: 30px 24px 10px 24px;
 }
 .upperBtns {
     display: flex;
@@ -45,12 +45,24 @@
 
 .numberContainer {
     display: flex;
+    flex-direction: column;
+    width: 270px;
+
+}
+
+.operatorContainer {
+    width: 40px;
 }
 
 .btn {
     flex: 1;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 60px;
     border-style: solid;
-    margin: 0px 0px 0px 0px;
+    margin: 2px 2px 2px 2px;
 }
+
+.zeroBtn {
+    width: 160px;
+}
+

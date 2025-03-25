@@ -30,3 +30,7 @@ let a
 let b
 let op
 let result
+
+while (a != '' && b != '' & op != '' ) {
+    
+}
