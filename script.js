@@ -3,6 +3,8 @@ function add(a,b) {
     numOne = "";
     numTwo = "";
     op = 0;
+    const display = document.querySelector(".display");
+    display.textContent = result; 
 };
 
 function subtract(a,b) {
@@ -10,6 +12,8 @@ function subtract(a,b) {
     numOne = "";
     numTwo = "";
     op = 0;
+    const display = document.querySelector(".display");
+    display.textContent = result;   
 };
 
 function multiply(a,b) {
@@ -17,6 +21,8 @@ function multiply(a,b) {
     numOne = "";
     numTwo = "";
     op = 0;
+    const display = document.querySelector(".display");
+    display.textContent = result;   
 };
 
 function divide(a,b) {
@@ -24,6 +30,8 @@ function divide(a,b) {
     numOne = "";
     numTwo = "";
     op = 0;
+    const display = document.querySelector(".display");
+    display.textContent = result;  
 };
 
 function operate(a,b,op) {
@@ -50,8 +58,12 @@ for (i = 0; i < numButtons.length; i++) {
     numButtons[i].addEventListener ("click", function (event) {
         if (op == 0) {
             numOne += event.target.innerHTML;
+            const calculation = document.querySelector(".calc");
+            calculation.textContent += event.target.innerHTML;
         } else {
             numTwo += event.target.innerHTML;
+            const calculation = document.querySelector(".calc");
+            calculation.textContent += event.target.innerHTML;  
         }
     })
 }
@@ -60,5 +72,8 @@ opButtons = document.getElementsByClassName('opBtn');
 for (i = 0; i < opButtons.length; i++) {
     opButtons[i].addEventListener ("click", function (event) {
         op = event.target.value;
+        const calculation = document.querySelector(".calc");
+        calculation.textContent += " " + event.target.innerHTML + " ";  
     })
 }
+
