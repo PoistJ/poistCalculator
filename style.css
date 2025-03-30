@@ -41,6 +41,7 @@
 }
 .upperBtns {
     display: flex;
+    flex-direction: column;
 }
 
 .numberContainer {
@@ -50,16 +51,12 @@
 
 }
 
-.operatorContainer {
-    width: 40px;
-}
-
-.btn {
+.btn, .numBtn, .opBtn, .equalBtn {
     flex: 1;
     width: 80px;
     height: 60px;
     border-style: solid;
-    margin: 2px 2px 2px 2px;
+    margin: 0px 0px 0px 0px;
 }
 
 .zeroBtn {

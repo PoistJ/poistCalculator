@@ -15,40 +15,35 @@
         </div>
         <div id="btnContainer">
             <div class="upperBtns">
-                <div class="numberContainer">
                     <div class="row">
                         <button class="btn clearBtn" onclick="clearAll">C</button>  
                         <button class="btn percentBtn">%</button>
                         <button class="btn negativeBtn">+/-</button>
-                    </div>
-                    <div class="row">
-                        <button class="numBtn oneBtn" value="1">1</button>
-                        <button class="numBtn twoBtn" value="2">2</button>
-                        <button class="numBtn threeBtn" value="3">3</button>
-                    </div>
-                    <div class="row">
-                        <button class="numBtn fourBtn" value="4">4</button>
-                        <button class="numBtn fiveBtn" value="5">5</button>
-                        <button class="numBtn sixBtn" value="6">6</button>
+                        <button class="opBtn divideBtn" value="/">/</button>
                     </div>
                     <div class="row">
                         <button class="numBtn sevenBtn" value="7">7</button>
                         <button class="numBtn eightBtn" value="8">8</button>
                         <button class="numBtn nineBtn" value="9">9</button>
+                        <button class="opBtn multiplyBtn" value="*">x</button>
                     </div>
-                </div>
-                <div class="operatorContainer">
-                    <button class="opBtn divideBtn" value="/">/</button>
-                    <button class="opBtn multiplyBtn" value="*">x</button>
-                    <button class="opBtn addBtn" value="+">+</button>
-                    <button class="opBtn subtractBtn" value="-">-</button>
-                </div>
+                    <div class="row">
+                        <button class="numBtn fourBtn" value="4">4</button>
+                        <button class="numBtn fiveBtn" value="5">5</button>
+                        <button class="numBtn sixBtn" value="6">6</button>
+                        <button class="opBtn subtractBtn" value="-">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="numBtn oneBtn" value="1">1</button>
+                        <button class="numBtn twoBtn" value="2">2</button>
+                        <button class="numBtn threeBtn" value="3">3</button>
+                        <button class="opBtn addBtn" value="+">+</button>
+                    </div>
             </div>
-            
             <div class="lowerBtns">
-                <button class="numBtn zeroBtn" onclick="storeValue" value="0">0</button>
+                <button class="numBtn zeroBtn" value="0">0</button>
                 <button class="btn decimalBtn">.</button>
-                <button class="equalBtn" onclick="operate">=</button>
+                <button class="equalBtn" onclick="operate(numOne,numTwo,op)">=</button>
             </div>
         </div>
     </div>

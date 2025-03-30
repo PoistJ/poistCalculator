@@ -1,45 +1,45 @@
 function add(a,b) {
-    return a + b;
+    result = a + b;
+    numOne = "";
+    numTwo = "";
+    op = 0;
 };
 
 function subtract(a,b) {
-    return a - b;
+    result = a - b;
+    numOne = "";
+    numTwo = "";
+    op = 0;
 };
 
 function multiply(a,b) {
-    return a * b;
+    result = a * b;
+    numOne = "";
+    numTwo = "";
+    op = 0;
 };
 
 function divide(a,b) {
-    return a / b;
+    result = a / b;
+    numOne = "";
+    numTwo = "";
+    op = 0;
 };
 
 function operate(a,b,op) {
-    if (op == "+") {
-        return add(a,b);
-    } else if (op == "-") {
-        return subtract(a,b);
-    } else if (op == "*") {
-        return multiply(a,b);
-    } else if (op == "/") {
-        return divide(a,b);
+    if (op === "+") {
+        add(a,b);
+    } else if (op === "-") {
+        subtract(a,b);
+    } else if (op === "*") {
+        multiply(a,b);
+    } else if (op === "/") {
+        divide(a,b);
     }
 }
 
-function storeNum () {
-    if (a = '') {
-        a = document.getElementsByClassName('btn').value;
-    } else if (b = '' ) {
-        b = document.getElementsByClassName('btn').value;
-    }
-}
-
-function storeOp () {
-    op = document.getElementsByClassName('btn').value;
-}
-
-let a = "";
-let b = "";
+let numOne = "";
+let numTwo = "";
 let op = 0;
 let result;
 let aCount = 0;
@@ -49,22 +49,16 @@ numButtons = document.getElementsByClassName('numBtn');
 for (i = 0; i < numButtons.length; i++) {
     numButtons[i].addEventListener ("click", function (event) {
         if (op == 0) {
-            a += event.target.innerHTML;
-            console.log(a);
-            aCount++;
+            numOne += event.target.innerHTML;
         } else {
-            b += event.target.innerHTML;
-            console.log(b);
-            bCount++;
+            numTwo += event.target.innerHTML;
         }
     })
 }
 
-opButtons = document.getElementsByClassName('opBtn')
+opButtons = document.getElementsByClassName('opBtn');
 for (i = 0; i < opButtons.length; i++) {
     opButtons[i].addEventListener ("click", function (event) {
         op = event.target.value;
     })
 }
-
-equalbutton = document.getElementsByClassName('equalBtn');
