@@ -46,12 +46,17 @@ function operate(a,b,op) {
     }
 }
 
+function clearAll() {
+    const display = document.querySelector(".display");
+    display.innerHTML = "";
+    const calculation = document.querySelector(".calc");
+    calculation.innerHTML = "";
+}
+
 let numOne = "";
 let numTwo = "";
 let op = 0;
 let result;
-let aCount = 0;
-let bCount = 0;
 
 numButtons = document.getElementsByClassName('numBtn');
 for (i = 0; i < numButtons.length; i++) {
