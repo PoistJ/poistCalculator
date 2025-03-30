@@ -10,45 +10,45 @@
     <div id="container">
         <div class="calcInfo">PoistJ Instruments</div>
         <div id="screen">
-            <div class="calc">2 * 2 =</div>
-            <div class="display">1234567</div>
+            <div class="calc"></div>
+            <div class="display"></div>
         </div>
         <div id="btnContainer">
             <div class="upperBtns">
                 <div class="numberContainer">
                     <div class="row">
-                        <button class="btn clearBtn" onclick="clearAll">C</button>
+                        <button class="btn clearBtn" onclick="clearAll">C</button>  
                         <button class="btn percentBtn">%</button>
                         <button class="btn negativeBtn">+/-</button>
                     </div>
                     <div class="row">
-                        <button class="btn oneBtn" onclick="storeValue" value="1">1</button>
-                        <button class="btn twoBtn" onclick="storeValue" value="2">2</button>
-                        <button class="btn threeBtn" onclick="storeValue" value="3">3</button>
+                        <button class="numBtn oneBtn" value="1">1</button>
+                        <button class="numBtn twoBtn" value="2">2</button>
+                        <button class="numBtn threeBtn" value="3">3</button>
                     </div>
                     <div class="row">
-                        <button class="btn fourBtn" onclick="storeValue" value="4">4</button>
-                        <button class="btn fiveBtn" onclick="storeValue" value="5">5</button>
-                        <button class="btn sixBtn"> onclick="storeValue" value="6"</button>
+                        <button class="numBtn fourBtn" value="4">4</button>
+                        <button class="numBtn fiveBtn" value="5">5</button>
+                        <button class="numBtn sixBtn" value="6">6</button>
                     </div>
                     <div class="row">
-                        <button class="btn sevenBtn" onclick="storeValue" value="7">7</button>
-                        <button class="btn eightBtn" onclick="storeValue" value="8">8</button>
-                        <button class="btn nineBtn" onclick="storeValue" value="9">9</button>
+                        <button class="numBtn sevenBtn" value="7">7</button>
+                        <button class="numBtn eightBtn" value="8">8</button>
+                        <button class="numBtn nineBtn" value="9">9</button>
                     </div>
                 </div>
                 <div class="operatorContainer">
-                    <button class="btn divideBtn" onclick="storeValue" value="/">/</button>
-                    <button class="btn multiplyBtn" onclick="storeValue" value="*">x</button>
-                    <button class="btn addBtn" onclick="storeValue" value="+">+</button>
-                    <button class="btn subtractBtn" onclick="storeValue" value="-">-</button>
+                    <button class="opBtn divideBtn" value="/">/</button>
+                    <button class="opBtn multiplyBtn" value="*">x</button>
+                    <button class="opBtn addBtn" value="+">+</button>
+                    <button class="opBtn subtractBtn" value="-">-</button>
                 </div>
             </div>
             
             <div class="lowerBtns">
-                <button class="btn zeroBtn" onclick="storeValue" value="0">0</button>
+                <button class="numBtn zeroBtn" onclick="storeValue" value="0">0</button>
                 <button class="btn decimalBtn">.</button>
-                <button class="btn equalBtn" onclick="operate">=</button>
+                <button class="equalBtn" onclick="operate">=</button>
             </div>
         </div>
     </div>

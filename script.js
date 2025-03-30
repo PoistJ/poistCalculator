@@ -26,11 +26,45 @@ function operate(a,b,op) {
     }
 }
 
-let a
-let b
-let op
-let result
-
-while (a != '' && b != '' & op != '' ) {
-    
+function storeNum () {
+    if (a = '') {
+        a = document.getElementsByClassName('btn').value;
+    } else if (b = '' ) {
+        b = document.getElementsByClassName('btn').value;
+    }
 }
+
+function storeOp () {
+    op = document.getElementsByClassName('btn').value;
+}
+
+let a = "";
+let b = "";
+let op = 0;
+let result;
+let aCount = 0;
+let bCount = 0;
+
+numButtons = document.getElementsByClassName('numBtn');
+for (i = 0; i < numButtons.length; i++) {
+    numButtons[i].addEventListener ("click", function (event) {
+        if (op == 0) {
+            a += event.target.innerHTML;
+            console.log(a);
+            aCount++;
+        } else {
+            b += event.target.innerHTML;
+            console.log(b);
+            bCount++;
+        }
+    })
+}
+
+opButtons = document.getElementsByClassName('opBtn')
+for (i = 0; i < opButtons.length; i++) {
+    opButtons[i].addEventListener ("click", function (event) {
+        op = event.target.value;
+    })
+}
+
+equalbutton = document.getElementsByClassName('equalBtn');
