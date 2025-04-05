@@ -50,7 +50,7 @@
     width: 270px;
 }
 
-.btn, .numBtn, .opBtn, .equalBtn {
+.btn, .numBtn, .opBtn, .equalBtn, #decimalBtn {
     flex: 1;
     width: 80px;
     height: 60px;

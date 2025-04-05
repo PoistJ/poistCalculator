@@ -18,7 +18,7 @@
                     <div class="row">
                         <button class="btn clearBtn" onclick="clearAll()">C</button>  
                         <button class="btn percentBtn">%</button>
-                        <button class="btn negativeBtn">+/-</button>
+                        <button class="btn negativeBtn" onclick="convertSign()">+/-</button>
                         <button class="opBtn divideBtn" value="/">/</button>
                     </div>
                     <div class="row">
@@ -42,7 +42,7 @@
             </div>
             <div class="lowerBtns">
                 <button class="numBtn zeroBtn" value="0">0</button>
-                <button class="btn decimalBtn">.</button>
+                <button id="decimalBtn" value = ".">.</button>
                 <button class="equalBtn" onclick="operate(numOne,numTwo,op)">=</button>
             </div>
         </div>
